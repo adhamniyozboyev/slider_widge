@@ -17,8 +17,18 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Image.network(
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGxq7IL5lfT6cTPaXmCFJXL5eFKyV92bjAtw&usqp=CAU'),
+      body: Column(
+        children: [
+          Image.network(
+              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGxq7IL5lfT6cTPaXmCFJXL5eFKyV92bjAtw&usqp=CAU'),
+          Slider(value: 5, onChanged: (v) {
+
+            setState(() {
+              
+            });
+          })
+        ],
+      ),
     );
   }
 }
